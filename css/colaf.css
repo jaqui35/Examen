@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-image: url(../img/espp.jpg);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 6vh 30vh 65vh;
+    grid-template-areas: "head    head    head    head    head"
+                         "push    pop     peek    size    print"
+                         "body    body    body    body    body";
+}
+
+header{
+    grid-area: head;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: fantasy;
+    background-color: rgb(114, 70, 108);
+    color: rgb(241, 235, 235);
+}
+
+
+.enqueue,.dequeue,.peek,.size,.print{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 6px;
+    border-radius: 10px;
+}
+
+input{
+    border-radius: 3px;
+    border: black solid 4px;
+    width: 10vw;
+    height: 4vh;
+    font-size: 3vh;
+    text-align: center;
+    background-color: rgb(245, 241, 241);
+}
+
+.enqueue{
+    grid-area: push;
+    background-color: rgb(128, 83, 83);
+}
+.dequeue{
+    grid-area: pop;
+
+    background-color: rgb(68, 67, 67);
+}
+.peek{
+    grid-area: peek;
+
+    background-color: rgb(70, 75, 143);
+}
+.size{
+    grid-area: size;
+
+    background-color: rgb(179, 124, 142);
+}
+.print{
+    grid-area: print;
+
+    background-color: rgb(126, 157, 189);
+}
+.cuerpo{
+    grid-area: body;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-image: url(../img/espp.jpg);
+}
+
+.f{
+    width: 280px;
+    height: 250px;
+    background-image: url("../img/espacio.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 45%;
+    right: 80px;
+}
+
+div {
+    border:white 3px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+span, article, div{
+    color: white;
+    font-family: monospace;
+}

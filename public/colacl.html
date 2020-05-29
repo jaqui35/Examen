@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/colacl.css">
+    <title>COLA-CLASE</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>*  COLA CON CLASE  *</h1>
+        </header>
+        
+        <section class="enqueue">
+            <h1>-Enqueue-</h1>
+            <input type="text" id="b_enqueue">
+            <input type="button" onclick="Enqueue()" id="b_enqueue">
+        </section>
+        <section class="dequeue">
+            <h1>-Dequeue-</h1>
+            <input type="button" onclick="Dequeue()">
+        </section>
+        <section class="peek">
+            <h1>-Peek-</h1>
+            <input type="button" onclick="Peek()" id="b_peek">
+        </section>
+        <section class="size">
+            <h1>-Size-</h1>
+            <input type="button" onclick="Size()" id="b_size">
+        </section>
+        <section class="print">
+            <h1>-Print-</h1>
+            <input type="button" onclick="Print()" id="b_print">
+        </section>
+        <section class="cuerpo" id="cuerpo"></section>
+        <div class="p">
+        </div>
+    </main>
+    <script src="../js/colacl.js"></script>
+</body>
+</html>
